@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="lg:col-span-8 xl:col-span-7">
           <motion.h1
             id="hero-title"
-            className="text-[clamp(2.375rem,4.1vw,3.5rem)] font-medium leading-[1.04] tracking-[-0.035em] text-text"
+            className="text-balance text-[clamp(2.375rem,4.1vw,3.5rem)] font-medium leading-[1.04] tracking-[-0.035em] text-text"
             {...enter(0)}
           >
             <span className="block">{hero.line1}</span>
