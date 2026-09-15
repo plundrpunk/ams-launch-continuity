@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/geist-mono";
+
+@theme {
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --color-bg: #0a0d11;
+  --color-surface: #11161c;
+  --color-surface-2: #171d25;
+  --color-text: #e8ecf1;
+  --color-muted: #98a2ae;
+  --color-accent: #63a4e6;
+  --color-accent-deep: #2e6fa9;
+  --color-hairline: rgb(232 236 241 / 0.1);
+
+  --radius-panel: 14px;
+  --radius-btn: 10px;
+  --radius-frame: 16px;
+  --radius-frame-inner: 12px;
+
+  --shadow-panel: 0 30px 80px -30px rgb(4 8 14 / 0.6);
+  --shadow-frame: 0 40px 120px -40px rgb(4 8 14 / 0.6);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@utility display-h2 {
+  font-size: clamp(1.875rem, 3.3vw, 2.75rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+  text-wrap: balance;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+/* Anchor jumps stay instant: two long pinned sections make smooth scrolling a liability,
+   and programmatic scrolls (keyboard, anchors, automation) must land where they aim. */
+html {
+  background: var(--color-bg);
+  scroll-behavior: auto;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "ss01", "cv11";
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: rgb(99 164 230 / 0.28);
+  color: var(--color-text);
+}

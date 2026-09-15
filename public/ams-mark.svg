@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="244" height="274" viewBox="44 43 244 274" fill="none" role="img" aria-labelledby="ams-title ams-desc">
+  <title id="ams-title">Automaton Memory System mark</title>
+  <desc id="ams-desc">Hexagonal steel mark of the Automaton Memory System logo.</desc>
+  <defs>
+    <linearGradient id="ams-steel" x1="54" y1="54" x2="278" y2="288" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F1F4F7"/>
+      <stop offset="0.18" stop-color="#A9B2BC"/>
+      <stop offset="0.44" stop-color="#4A545F"/>
+      <stop offset="0.58" stop-color="#D9E0E7"/>
+      <stop offset="0.82" stop-color="#6B747F"/>
+      <stop offset="1" stop-color="#222832"/>
+    </linearGradient>
+    <linearGradient id="ams-steelDark" x1="75" y1="95" x2="250" y2="255" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#27313B"/>
+      <stop offset="0.45" stop-color="#111820"/>
+      <stop offset="1" stop-color="#060A0F"/>
+    </linearGradient>
+    <linearGradient id="ams-letterSteel" x1="90" y1="130" x2="245" y2="214" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset="0.22" stop-color="#C6D0DA"/>
+      <stop offset="0.52" stop-color="#7D8792"/>
+      <stop offset="0.76" stop-color="#E6ECF2"/>
+      <stop offset="1" stop-color="#717B86"/>
+    </linearGradient>
+    <linearGradient id="ams-wordSteel" x1="326" y1="76" x2="558" y2="164" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F5F7FA"/>
+      <stop offset="0.35" stop-color="#B9C2CC"/>
+      <stop offset="0.72" stop-color="#69737E"/>
+      <stop offset="1" stop-color="#EFF3F6"/>
+    </linearGradient>
+    <linearGradient id="ams-accent" x1="58" y1="50" x2="792" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#91C8FF"/>
+      <stop offset="0.52" stop-color="#5DA9F2"/>
+      <stop offset="1" stop-color="#2E6FA9"/>
+    </linearGradient>
+    <radialGradient id="ams-coreGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(166 180) rotate(90) scale(96 120)">
+      <stop offset="0" stop-color="#91C8FF" stop-opacity="0.18"/>
+      <stop offset="0.55" stop-color="#5DA9F2" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#0B1016" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="ams-depth" x="-30" y="-30" width="960" height="420" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="11" stdDeviation="9" flood-color="#00060A" flood-opacity="0.42"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="2.2" flood-color="#5DA9F2" flood-opacity="0.22"/>
+    </filter>
+    <filter id="ams-softGlow" x="-30" y="-30" width="960" height="420" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#91C8FF" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#ams-depth)">
+    <g id="ams-mark">
+      <polygon points="277.72,244.50 166.00,309.00 54.28,244.50 54.28,115.50 166.00,51.00 277.72,115.50" fill="url(#ams-steel)" opacity="0.96"/>
+      <polygon points="263.86,236.50 166.00,293.00 68.14,236.50 68.14,123.50 166.00,67.00 263.86,123.50" fill="#0B1118" stroke="#89939E" stroke-width="1.2" opacity="0.97"/>
+      <polygon points="249.14,228.00 166.00,276.00 82.86,228.00 82.86,132.00 166.00,84.00 249.14,132.00" fill="url(#ams-steelDark)" stroke="url(#ams-steel)" stroke-width="2.6"/>
+      <polygon points="237.01,221.00 166.00,262.00 94.99,221.00 94.99,139.00 166.00,98.00 237.01,139.00" fill="url(#ams-coreGlow)" stroke="#2D3742" stroke-width="1"/>
+      <path d="M54 180 H86 M246 180 H282" stroke="#D5DCE3" stroke-width="1.2" opacity="0.55"/>
+      <path d="M80 102 L106 72 H166 M220 72 L248 104" stroke="url(#ams-accent)" stroke-width="2.1" stroke-linecap="round" opacity="0.75"/>
+      <path d="M80 258 L106 288 H166 M220 288 L248 256" stroke="#7F8995" stroke-width="1.35" stroke-linecap="round" opacity="0.5"/>
+      
+        <g opacity="0.75" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M92 139 H230 M92 222 H230 M108 122 V238 M132 122 V238 M214 122 V238 M238 151 V209" stroke="#66727F" stroke-width="1.1" opacity="0.56"/>
+          <path d="M91 155 H110 M91 205 H110 M222 155 H240 M222 205 H240" stroke="url(#ams-accent)" stroke-width="2.2"/>
+          <circle cx="108" cy="139" r="3.7" fill="url(#ams-accent)" filter="url(#ams-softGlow)"/>
+          <circle cx="132" cy="222" r="3.7" fill="url(#ams-accent)" filter="url(#ams-softGlow)"/>
+          <circle cx="214" cy="139" r="3.7" fill="url(#ams-accent)" filter="url(#ams-softGlow)"/>
+          <circle cx="238" cy="180" r="3.7" fill="url(#ams-accent)" filter="url(#ams-softGlow)"/>
+          <path d="M104 117 L89 126 L89 151 M232 117 L247 126 L247 151 M104 243 L89 234 L89 209 M232 243 L247 234 L247 209" stroke="#AEB8C2" stroke-width="1.1" opacity="0.55"/>
+        </g>
+        
+      <path d="M94.77 203 111.65 148.97H121.64L138.63 203H127.02L124.12 191.94H109.24L106.35 203ZM111.62 182.85H121.75L116.66 163.55Z M168.17 188.01 178.34 148.97H192.59V203H181.64V188.38L182.64 166L171.88 203H164.42L153.66 166L154.66 188.38V203H143.72V148.97H157.97Z M224.21 188.79Q224.21 186 222.85 184.2Q221.5 182.4 215.75 180.07Q209.99 177.73 205.69 174.13Q201.12 170.31 201.12 163.33Q201.12 156.5 205.91 152.36Q210.7 148.23 218.23 148.23Q225.99 148.23 230.61 152.9Q235.23 157.58 235.23 164.89H224.32Q224.32 161.51 222.85 159.32Q221.39 157.13 218.05 157.13Q214.97 157.13 213.5 158.95Q212.03 160.77 212.03 163.37Q212.03 166 214.24 167.78Q216.45 169.56 220.09 171.16Q227.66 173.87 231.41 177.95Q235.15 182.03 235.15 188.71Q235.15 195.84 230.66 199.79Q226.17 203.74 218.45 203.74Q213.82 203.74 209.53 201.85Q205.24 199.96 202.5 196.02Q199.75 192.09 199.75 185.93H210.7Q210.7 190.83 212.65 192.83Q214.59 194.84 218.45 194.84Q221.61 194.84 222.91 193.11Q224.21 191.38 224.21 188.79Z" fill="url(#ams-letterSteel)" stroke="url(#ams-accent)" stroke-width="1.05" paint-order="stroke fill" filter="url(#ams-softGlow)"/>
+      <path d="M82 180 H69 M248 180 H261" stroke="url(#ams-accent)" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    
+  </g>
+</svg>
