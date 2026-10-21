@@ -1,4 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <rect width="32" height="32" rx="7" fill="#0A0D11"/>
-  <path d="M16 5.5 L25.09 10.75 L25.09 21.25 L16 26.5 L6.91 21.25 L6.91 10.75 Z" stroke="#63A4E6" stroke-width="2" stroke-linejoin="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="122 54 1000 1000" fill="#000" role="img" aria-label="Automaton"><style>@media(prefers-color-scheme:dark){svg{fill:#fff}}</style><path d="M626.5 200.5 700 322 418 783.5H449L523 669 533 660 700 658 706 662 530 909H202Z M717 350.5 1043 909H877.5L638 477.5Z"/></svg>

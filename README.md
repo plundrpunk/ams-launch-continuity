@@ -83,7 +83,7 @@ Manual Playwright checks at 1440x900 (scratchpad scripts, not committed): the st
 
 ## Deviations from DESIGN.md and why
 
-1. Nav logo. The spec asks for the official SVG at 28px height. The lockup is 2.5:1, so at 28px it is 70px wide and the wordmark text is about 1px tall (rendered and checked). The nav instead uses `public/ams-mark.svg`, the hex mark cropped from the official file (same artwork, viewBox reduced, wordmark group removed) at 28px, with "Automaton Memory System" set in Geist 500 beside it. The full lockup appears in the footer at 64px, where it reads.
+1. Nav logo. Updated October 21, 2026: approved Automaton geometry in `src/brand/automaton.ts`, rendered inline with `currentColor` beside the product name. The footer uses the approved outlined lockup with the same inherited color.
 2. Hero copy column. Copy occupies 7 of 12 columns at 1280px and wider (8 at 1024 to 1279) instead of 6 so the 56px headline holds two lines. The canvas density is still weighted to the right half.
 3. Sticky stack below 768px. The spec defines the reduced-motion fallback only. On phones the four cards stack without pinning to avoid clipping tall card content in a pinned viewport.
 4. Card shells in the sticky stack are opaque page-background rather than transparent, so the dimmed previous card is visible only above the arriving card's top edge. A transparent shell produced a faint compositing bleed of the previous heading through the incoming panel.
@@ -98,8 +98,37 @@ Manual Playwright checks at 1440x900 (scratchpad scripts, not committed): the st
 - `src/lib/gsap.ts`: single ScrollTrigger registration, refresh after fonts load.
 - `src/lib/usePrefersReducedMotion.ts`: shared media-query hook for canvas, GSAP and Motion branches.
 - `src/components/ui.tsx`: `Container`, `Reveal`, `Button`, double-bezel `Frame`.
-- `public/ams_logo5.svg` (official lockup), `public/ams-mark.svg` (cropped mark), `public/favicon.svg` (hexagon outline in the accent), `public/img/*.webp`.
+- `public/brand/*`: approved Automaton assets; `public/favicon.svg`: adaptive mark. Legacy `ams_logo5.svg` and `ams-mark.svg` URLs contain the new artwork. `public/img/*.webp` retains the existing page illustrations.
 
 ## TODO
 
 None blocking. If the art direction ever prefers `continuity-layers-b` (smoked glass, quieter), swap the file at `public/img/continuity-layers.webp`; nothing else changes.
+
+## Automaton logo update, October 21, 2026
+
+The approved Automaton mark replaces the legacy hexagon. The traced geometry and
+finished public assets are copied unchanged from Drew's approved asset folder;
+inline SVGs use `currentColor` to preserve this page's palette. `index.html` adds
+the adaptive SVG/ICO favicon, 180px apple-touch icon, and 1200x630 OG/Twitter
+card with `%BASE_URL%` paths. No dependency or deployment configuration changed.
+
+Verification on this branch:
+
+- `BASE_PATH=/ams-launch-continuity/ npm run build`: PASS (`tsc -b && vite build`).
+- Existing `_tools/qa.mjs`, normal and reduced motion: PASS, zero failures in
+  both runs across 320, 390, 768, 1024, 1440 and 1920px. Zero console errors,
+  failed requests, unloaded images or horizontal overflow; 44px mobile targets
+  and hero fit checks pass.
+- Brand checks: 15 PASS, 0 FAIL. Header/footer geometry and `currentColor`
+  verified under light and dark OS preferences; served favicon, ICO, touch icon
+  and social card match the approved files byte-for-byte. Social dimensions
+  verified at 1200x630. Desktop anchor/home navigation and 390px menu/Escape pass.
+- Desktop (1440x900) and mobile (390x844) hero and footer screenshots visually
+  inspected. Full-page captures are also saved.
+
+Local evidence (outside this Git repository):
+`../output/playwright/automaton-logo-20261021/continuity/` and
+`../output/playwright/automaton-logo-20261021/continuity-build.log`.
+Historical `_evidence/` remains untouched. Oversized text entry is not applicable
+to the logo surfaces (no user text input). Public crawler previews and production
+behavior were not tested. This branch is for PR review only; no merge or deploy.

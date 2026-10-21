@@ -1,8 +1,7 @@
 import { ArrowUpRight } from "@phosphor-icons/react";
 import { alt, cta, footer, links } from "../content";
 import { Container } from "./ui";
-
-const base = import.meta.env.BASE_URL;
+import { markPath, wordmarkPath } from "../brand/automaton";
 
 const items = [
   { label: footer.siteLabel, href: links.site },
@@ -17,7 +16,10 @@ export default function Footer() {
       <Container className="py-12 lg:py-16">
         <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
           <div>
-            <img src={`${base}ams_logo5.svg`} alt={alt.logo} width={900} height={360} className="h-20 w-auto md:h-24" />
+            <svg viewBox="78 172 1100 917" fill="currentColor" role="img" aria-label={alt.logo} className="h-20 w-auto text-text md:h-24">
+              <path d={markPath} />
+              <path fillRule="evenodd" d={wordmarkPath} />
+            </svg>
             <p className="mt-6 text-sm text-muted">{footer.copyright}</p>
           </div>
           <ul className="flex flex-wrap gap-x-7 gap-y-0">

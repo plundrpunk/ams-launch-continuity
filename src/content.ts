@@ -193,8 +193,8 @@ export const footer = {
 } as const;
 
 export const alt = {
-  mark: "Automaton Memory System hexagonal mark",
-  logo: "Automaton Memory System",
+  mark: "Automaton mark",
+  logo: "Automaton logo",
   layers: "Layered glass and steel plates with cool light passing through the gaps.",
   scoreboard:
     "Automaton dashboard showing the Smart Actions Bayesian trust scoreboard: totals, success rate, and per-category success percentages with confidence-interval widths.",
