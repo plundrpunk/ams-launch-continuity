@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { List, X } from "@phosphor-icons/react";
-import { alt, cta, links, nav } from "../content";
+import { cta, links, nav } from "../content";
 import { Button } from "./ui";
-
-const base = import.meta.env.BASE_URL;
+import { AutomatonMark } from "./AutomatonMark";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -31,7 +30,7 @@ export default function Nav() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-hairline bg-bg/75 backdrop-blur-md">
       <div className="mx-auto flex h-16 w-full max-w-[1280px] items-center justify-between px-5 sm:px-8 lg:px-10">
         <a href="#top" className="flex min-h-11 items-center gap-3">
-          <img src={`${base}ams-mark.svg`} alt={alt.mark} width={25} height={28} className="h-7 w-auto" />
+          <AutomatonMark />
           <span className="text-[15px] font-medium tracking-[-0.01em] text-text">{nav.brand}</span>
         </a>
 
